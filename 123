@@ -1,0 +1,2 @@
+schtasks /create /tn "RunAsSystemTask" /tr "C:\path\to\your_program.exe" /sc once /st 00:00 /rl highest /f /ru "SYSTEM"
+schtasks /run /tn "RunAsSystemTask"
